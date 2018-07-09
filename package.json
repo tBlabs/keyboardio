@@ -18,6 +18,7 @@
         "serve": "npm run clean && run-p watch monitor",
         "lint": "tslint -c tslint.json './src/**/*.{ts,tsx}' --format msbuild",
         "test": "jest --runInBand",
+        "testwatch": "jest --runInBand --watch",
         "build": "tsc -p .",
         "clean": "rm ./bin -rf",
         "autofix": "tslint --fix --project .",
@@ -39,6 +40,7 @@
         "typescript": "^2.6.2"
     },
     "dependencies": {
+        "@types/readline-sync": "^1.4.3",
         "async-delay": "^1.0.3",
         "asyncawait": "^1.0.6",
         "axios": "^0.17.1",
@@ -47,6 +49,7 @@
         "inversify": "^4.1.0",
         "jasmine-core": "^2.6.1",
         "os": "^0.1.1",
+        "readline-sync": "^1.4.9",
         "reflect-metadata": "^0.1.10",
         "uuid": "^3.1.0"
     }

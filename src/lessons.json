@@ -1,0 +1,12 @@
+{
+    "first lesson":
+    {
+        "charset": "asdf",
+        "spaces": 5
+    },
+    "second lesson":
+    {
+        "charset": "jkl;",
+        "spaces": 4
+    }
+}
