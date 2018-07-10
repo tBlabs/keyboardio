@@ -1,12 +1,14 @@
 {
-    "first lesson":
-    {
+    "asdf letters": {
         "charset": "asdf",
         "spaces": 5
     },
-    "second lesson":
-    {
-        "charset": "jkl;",
+    "+jkl;": {
+        "charset": "asdfjkl;",
+        "spaces": 4
+    },
+    "erui": {
+        "charset": "asdfjkl;erui",
         "spaces": 4
     }
 }

@@ -1,25 +1,10 @@
-Zaczniemy od źle napisanego kodu (statyczne klasy, clg na sztywno, funkcje zamiast klas)
-"Spoko kodzik co nie?"
-Potem poproszę o znalezienie tych błędów mówiąc: "to teraz przetestujcie ten kod".
-Szybko okaże się że pewne rzeczy trzeba wynieść do zależności, które niestety trzeba bęzie
-przekazać przez parametry i tu warto zaznaczyć że to mogłoby dziać się samo (DI).
+1. Zaczynamy od działającego ale brzydkiego, prymitywnego kodu
+2. Zastanawiamy się co zrobić żeby kod był testowalny
 
+"new" jest złe
+static jest złe
+interfejsy rządzą
 
-Dlaczego statyczne klasy są złe,
-Dlaczego console.log itp jest do kitu
-Zależności oraz ich mockowanie
-
-# node.ts
-
-This a very basic startup project with `Node.js`+`ES7` and `Typescript` prepared for Linux environment.
-
-Extra features:
-- Dependency Injection (in `./src/IoC`) with samples
-- Local environment variables (in `.env`)
-- Some convenient commands (look at `package.json` `scripts` section)
-- Test samples (`jest` inside)
-- `async/await` included, `axios` on board
-- Extra services: `Logger`, `Environment` and `RunMode`
 
 ## Before start
 

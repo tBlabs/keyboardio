@@ -1,4 +1,4 @@
-import { NameValidator } from './Validators';
+import { NameValidator } from './NameValidator';
 
 describe('NameValidator', () =>
 {
@@ -48,11 +48,24 @@ describe('NameValidator', () =>
         expect(isValid).toBeFalsy();
     });
 
+    it('should fail for too many spaces between words', () =>
+    {
+        let isValid = NameValidator('Jon   Doe');
+
+        expect(isValid).toBeFalsy();
+    });
+
+    it('should fail for too many spaces around', () =>
+    {
+        let isValid = NameValidator('  Jon Doe  ');
+
+        expect(isValid).toBeFalsy();
+    });
+
     it('should succeed for valid value ', () =>
     {
         let isValid = NameValidator('Jon Doe');
 
         expect(isValid).toBeTruthy();
     });
-
 });
