@@ -1,8 +1,8 @@
 import { Keyboard } from './Keyboard';
 
-export function Menu(title, items)
+export function Menu(items)
 {
-    console.log(title + ':');
+    console.log('--------------------------');
 
     items.forEach((item, index) => 
     {
@@ -30,3 +30,31 @@ export function MenuDI(_console, _keyboard, title, items)
 
     return items[pressedKeyAsInt];
 }
+
+// class MenuBase
+// {
+//     protected items = [];
+
+//     public Print()
+//     {
+//         this.items.forEach((item, index) => 
+//         {
+//             console.log(`[${ index }] ${ item }`);
+//         });
+//     }
+
+//     public GetUserChoice()
+//     {
+//         let pressedKey = this._keyboard.GetOneKey();
+//         let pressedKeyAsInt = parseInt(pressedKey);
+//         return pressedKeyAsInt;
+//     }
+// }
+
+// class MenuC extends MenuBase
+// {
+//     constructor(_output, _input, items)
+//     {
+//         super()
+//     }
+// }

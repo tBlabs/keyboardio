@@ -1,5 +1,23 @@
+Czego się nie nauczymy?
+
+- Zbyt wielu dobrych praktyk
+- 
+
+Jeśli starczy czasu:
+- porozmawiamy o kontenerze DI
+
+
+
 1. Zaczynamy od działającego ale brzydkiego, prymitywnego kodu
 2. Zastanawiamy się co zrobić żeby kod był testowalny
+
+* testowanie funkcji
+* testowanie klas
+* mokowanie
+* testowanie I/O
+* testowanie losowości
+* testowanie pętli
+* testowanie zależności z zależnościami
 
 "new" jest złe
 static jest złe

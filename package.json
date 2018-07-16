@@ -30,7 +30,8 @@
         "@types/jasmine": "^2.6.3",
         "@types/jest": "^21.1.6",
         "@types/lodash": "^4.14.92",
-        "@types/node": "^7.0.18",
+        "@types/node": "^7.0.67",
+        "@types/readline-sync": "^1.4.3",
         "@types/uuid": "^2.0.30",
         "jest": "^21.2.1",
         "nodemon": "^1.12.1",
@@ -40,7 +41,6 @@
         "typescript": "^2.6.2"
     },
     "dependencies": {
-        "@types/readline-sync": "^1.4.3",
         "async-delay": "^1.0.3",
         "asyncawait": "^1.0.6",
         "axios": "^0.17.1",
