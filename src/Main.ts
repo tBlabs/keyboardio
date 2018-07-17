@@ -36,7 +36,8 @@ export class Main
     LessonExecutor(config)
     {
         const lessonText = LessonGenerator(config);
-        console.log(lessonText);
+        console.log('  ' + lessonText);
+        process.stdout.write('> ');
         const keyboard = new Keyboard();
         const userInput = keyboard.GetLine();
         const mistakes = Validate(lessonText, userInput);
