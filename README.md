@@ -2,6 +2,7 @@
 2. Przykłady testów + przyjrzenie się co wypluwa konsola
 PO KAŻDYM TEŚCIE DAĆ CHWILĘ NA NAPISANIE CZEGOŚ PODOBNEGO SAMEMU!
 - najprostszy test z użyciem test()
+- różnica między toBe a toEqual
 - testów z użyciem describe oraz it, przy okazji jak łapać wyjątki
 - test asynchroniczności
 - beforeEach itp.....
@@ -13,7 +14,10 @@ PO KAŻDYM TEŚCIE DAĆ CHWILĘ NA NAPISANIE CZEGOŚ PODOBNEGO SAMEMU!
    (brak obsługi wyjątków: np zły guzik w menu, pusta lista opcji)
   3.3 Jak już się uda wytestować kod to spróbujemy dodać licznik czasu
 4. TDD
+5. czym jest pokrycie testami
+6. AAA Arrange Act Assert
 5. DI
+1. Interfejsy: spełnianie kontraktu == zapewnienie tego samego interfejsu
 
 Czego się nauczymy?
 - czym jest test
