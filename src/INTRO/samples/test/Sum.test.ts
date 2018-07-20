@@ -1,9 +1,9 @@
 import { Sum } from './Sum';
 
-test('Sum() should return sum of numbers', () =>
+test('Sum() should return sum of numbers', () => // this is a regular function
 {
-    const output = Sum(1, 2);
+    const sumResult = Sum(1, 2); // regular function call, just like in your code
+    const expectedSumResult = 3; // this is what your function should return
 
-    expect(output).toBe(3);
+    expect(sumResult).toBe(expectedSumResult); // <---> if (sumResult === expecteSumResult) TEST_SUCCESS; else TEST_FAIL;
 });
-

@@ -1,6 +1,12 @@
 export function FunctionWithDependency(dependency, parameter)
 {
-    let calculationResult = dependency(parameter);
+    let calculationResult = dependency();
 
-    return calculationResult + 5;
+    return calculationResult + parameter;
+}
+
+
+export function GeneratePassword(randomValue)
+{
+    return 
 }

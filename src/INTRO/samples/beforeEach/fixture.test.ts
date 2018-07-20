@@ -2,7 +2,7 @@ describe('beforeEach example', () =>
 {
     let variable = 0;
 
-    beforeEach(() =>
+    beforeEach(() => // this gonna be called before every it() function
     {
         variable = 5;
     });

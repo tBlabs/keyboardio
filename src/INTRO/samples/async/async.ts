@@ -1,4 +1,4 @@
-export async function SumAsync(a: number, b: number): Promise<number>
+export async function SumAsync(a, b): Promise<number>
 {
     return a + b;
 }

@@ -1,4 +1,4 @@
-export function Dependency(param)
+export function Dependency()
 {
-    return Math.random() * param;
+    return Math.random();
 }
