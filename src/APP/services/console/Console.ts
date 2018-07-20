@@ -2,7 +2,12 @@ import { IConsole } from "./IConsole";
 
 export class Console implements IConsole
 {
-    public Log(text: string): void
+    Write(text)
+    {
+        process.stdout.write(text);
+    }
+
+    WriteLine(text)
     {
         console.log(text);
     }

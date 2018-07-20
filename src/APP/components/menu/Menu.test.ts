@@ -1,8 +1,7 @@
-import { KeyboardMock } from './KeyboardMock';
-import { ConsoleMock } from './ConsoleMock';
-import { Keyboard } from './Keyboard';
 import { Menu, MenuDI } from "./Menu";
 import { EOL } from 'os';
+import { ConsoleMock } from "../../services/console/ConsoleMock";
+import { KeyboardMock } from "../../services/keyboard/KeyboardMock";
 
 describe('Menu()', () =>
 {

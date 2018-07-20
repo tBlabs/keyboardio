@@ -3,9 +3,14 @@ import { EOL } from 'os';
 
 export class ConsoleMock implements IConsole
 {
-    public output = "";
+    output = "";
 
-    public Log(text: string): void
+    Write(text)
+    {
+        this.output += text;
+    }
+
+    WriteLine(text)
     {
         this.output += text + EOL;
     }

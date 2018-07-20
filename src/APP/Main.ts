@@ -1,8 +1,8 @@
-import { Keyboard } from './Keyboard';
-import { Validate } from './Validate';
-import { Menu } from './Menu';
-import { LessonsStorage } from './LessonsStorage';
-import { LessonGenerator } from './GenerateLesson';
+import { Keyboard } from './services/keyboard/Keyboard';
+import { Validate } from './services/validator/Validate';
+import { Menu } from './components/menu/Menu';
+import { LessonsStorage } from './services/storage/LessonsStorage';
+import { LessonGenerator } from './services/lessonGenerator/GenerateLesson';
 
 export class Main
 {
@@ -35,12 +35,23 @@ export class Main
 
     LessonExecutor(config)
     {
-        const lessonText = LessonGenerator(config);
+        const lessonText = LessonGenerator.Generate(config);
         console.log('  ' + lessonText);
         process.stdout.write('> ');
         const keyboard = new Keyboard();
         const userInput = keyboard.GetLine();
         const mistakes = Validate(lessonText, userInput);
         console.log('Mistakes: ' + mistakes);
+    }
+
+    LessonExecutorDI(_console, _keyboard, _generator, config)
+    {
+        // Split into 2 modules: LessonPrinter, UserTraining
+        const lessonText = _generator.Generate(config);
+        _console.WriteLine('  ' + lessonText);
+        _console.Write('> ');
+        const userInput = _keyboard.GetLine(); 
+        const mistakes = Validate(lessonText, userInput);
+        _console.Write('Mistakes: ' + mistakes);
     }
 }
