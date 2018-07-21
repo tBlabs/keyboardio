@@ -1,6 +1,6 @@
-import { IConsole } from "./IConsole";
+import { IScreen } from "./IScreen";
 
-export class Console implements IConsole
+export class Console implements IScreen
 {
     Write(text)
     {

@@ -13,8 +13,6 @@ test('mock with jest', () =>
 {
     let result = FunctionWithDependency(Dependency, 5);
 
-    expect(Dependency).toHaveBeenCalled();
-
     expect(result).toBe(6);
 }); 
 

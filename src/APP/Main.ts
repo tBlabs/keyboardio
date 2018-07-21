@@ -43,15 +43,4 @@ export class Main
         const mistakes = Validate(lessonText, userInput);
         console.log('Mistakes: ' + mistakes);
     }
-
-    LessonExecutorDI(_console, _keyboard, _generator, config)
-    {
-        // Split into 2 modules: LessonPrinter, UserTraining
-        const lessonText = _generator.Generate(config);
-        _console.WriteLine('  ' + lessonText);
-        _console.Write('> ');
-        const userInput = _keyboard.GetLine(); 
-        const mistakes = Validate(lessonText, userInput);
-        _console.Write('Mistakes: ' + mistakes);
-    }
 }

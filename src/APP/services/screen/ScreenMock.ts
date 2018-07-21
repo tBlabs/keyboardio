@@ -1,7 +1,7 @@
-import { IConsole } from './IConsole';
+import { IScreen } from './IScreen';
 import { EOL } from 'os';
 
-export class ConsoleMock implements IConsole
+export class ScreenMock implements IScreen
 {
     output = "";
 
